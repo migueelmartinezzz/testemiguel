@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import streamlit as st
+
 
 # Função para definir tema claro ou escuro
 def set_theme(dark_mode):
@@ -43,14 +43,14 @@ def set_theme(dark_mode):
         """
         st.markdown(light_mode_css, unsafe_allow_html=True)
 
-# Função para o interruptor de tema (com movimento)
+# Função para criar o interruptor de tema
 def theme_switch():
     st.sidebar.markdown("""
     <style>
     .switch-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 20px;
     }
     .switch-label {
@@ -86,15 +86,15 @@ def theme_switch():
     }
     </style>
     """, unsafe_allow_html=True)
-    
+
     # Criar o interruptor de tema
     dark_mode = st.sidebar.checkbox('Modo Escuro', key='theme_toggle')
 
     if dark_mode:
-        st.markdown('<div class="switch-container"><label class="switch-label">🌙 Escuro</label><div class="switch switch-on"></div></div>', unsafe_allow_html=True)
+        st.sidebar.markdown('<div class="switch-container"><label class="switch-label">🌙 Escuro</label><div class="switch switch-on"></div></div>', unsafe_allow_html=True)
         set_theme(True)
     else:
-        st.markdown('<div class="switch-container"><label class="switch-label">🌞 Claro</label><div class="switch"></div></div>', unsafe_allow_html=True)
+        st.sidebar.markdown('<div class="switch-container"><label class="switch-label">🌞 Claro</label><div class="switch"></div></div>', unsafe_allow_html=True)
         set_theme(False)
 
 # Adicionando o título e subtítulo com fontes personalizadas
@@ -129,5 +129,3 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrent
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
-
-
