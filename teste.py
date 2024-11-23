@@ -104,7 +104,7 @@ st.markdown("""
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px; /* Ajuste o tamanho da logo */
+    width: 100px; /* Ajuste o tamanho da logo */
     margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
@@ -144,7 +144,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # Exibição do título e subtítulo
 st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
-st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrentes</h2>", unsafe_allow_html=True)
+st.markdown("<h2 class='subtitulo'>Encontre parceiros & conheça seus concorrentes</h2>", unsafe_allow_html=True)
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
