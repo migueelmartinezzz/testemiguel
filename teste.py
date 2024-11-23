@@ -6,14 +6,14 @@ def set_theme(dark_mode):
         dark_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #0e1117;
-            color: #ffffff;
+            background-color: #ffffff; /* Fundo branco */
+            color: #000000; /* Texto preto */
         }
         [data-testid="stSidebar"] {
-            background-color: #1c1e26;
+            background-color: #e0f7fa; /* Azul claro para a barra lateral */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
-            color: #ffffff;
+            color: #000000; /* Texto preto */
         }
         </style>
         """
@@ -22,14 +22,14 @@ def set_theme(dark_mode):
         light_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #f5f5f5;
-            color: #000000;
+            background-color: #ffffff; /* Fundo branco */
+            color: #000000; /* Texto preto */
         }
         [data-testid="stSidebar"] {
-            background-color: #ffffff;
+            background-color: #e0f7fa; /* Azul claro para a barra lateral */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
-            color: #000000;
+            color: #000000; /* Texto preto */
         }
         .titulo {
             color: #00B2A9; /* Cor turquesa para o título */
@@ -104,7 +104,7 @@ st.markdown("""
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px; /* Ajuste o tamanho da logo */
+    width: 150px; /* Ajuste o tamanho da logo */
     margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
@@ -112,8 +112,8 @@ st.markdown("""
     font-size: 36px;
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
-    text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px; /* Espaço abaixo do título */
 }
 
 .subtitulo {
@@ -121,8 +121,14 @@ st.markdown("""
     font-weight: bold;
     color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: -10px;
+    margin-bottom: 30px; /* Espaço entre o subtítulo e o conteúdo abaixo */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 30px;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -133,9 +139,13 @@ theme_switch()
 # Adicionando a logo acima do título
 st.markdown('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" class="logo">', unsafe_allow_html=True)  # Exemplo de logo
 
+# Linha divisória entre a logo e o título
+st.markdown("<hr>", unsafe_allow_html=True)
+
 # Exibição do título e subtítulo
 st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
 st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrentes</h2>", unsafe_allow_html=True)
 
 # Descrição adicional com alinhamento adequado
-st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
+st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
+
