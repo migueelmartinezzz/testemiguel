@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 import streamlit as st
 
 # Função para definir tema claro ou escuro
@@ -35,10 +34,10 @@ def set_theme(dark_mode):
             color: #000000;
         }
         .titulo {
-            color: #013220; /* Verde escuro no tema claro */
+            color: #00B2A9; /* Cor turquesa para o título */
         }
         .subtitulo {
-            color: #333333; /* Cinza escuro no tema claro */
+            color: #333333; /* Cinza escuro para o subtítulo */
         }
         </style>
         """
@@ -59,14 +58,14 @@ st.markdown("""
 .titulo {
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    text-align: center;  /* Centralizado */
 }
 
 .subtitulo {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    text-align: center;  /* Centralizado */
     margin-top: -10px;
 }
 </style>
@@ -78,3 +77,4 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrent
 
 # Descrição adicional
 st.write("Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!")
+
