@@ -1,20 +1,24 @@
 import streamlit as st
 import pandas as pd
+import streamlit as st
+import pandas as pd
+
+# HTML e CSS para estilizar o título e subtítulo
 st.markdown(
     """
     <style>
-    @import url('https://fonts.google.com/share?selection.family=Bokor|Fjalla+One|Noto+Serif:ital,wght@0,100..900;1,100..900r');
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
     .titulo {
         font-size: 36px;
-        color: #003366; /* Azul escuro */
-        font-family: 'Poppins', sans-serif; /* Fonte personalizada */
+        color: #006400; /* Verde escuro */
+        font-family: 'Fjalla One', sans-serif; /* Fonte Fjalla One */
         text-align: center; /* Centralizado */
     }
     .subtitulo {
         font-size: 24px;
         font-weight: bold; /* Negrito */
         color: #333333; /* Cinza escuro */
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Fjalla One', sans-serif;
         text-align: center; /* Centralizado */
         margin-top: -10px; /* Ajuste opcional para aproximar o subtítulo */
     }
@@ -26,7 +30,15 @@ st.markdown(
 )
 
 # Descrição adicional
-st.markdown("Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!")
+st.markdown(
+    """
+    <div style='text-align: center; font-family: Fjalla One, sans-serif; color: #555555;'>
+    Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 
 
