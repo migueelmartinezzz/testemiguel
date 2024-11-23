@@ -43,12 +43,58 @@ def set_theme(dark_mode):
         """
         st.markdown(light_mode_css, unsafe_allow_html=True)
 
-# Função para o botão de interruptor para o tema
+# Função para o interruptor de tema (com movimento)
 def theme_switch():
-    theme = st.sidebar.checkbox("Mudar para modo escuro", value=False)
-    if theme:
+    st.sidebar.markdown("""
+    <style>
+    .switch-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .switch-label {
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .switch {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 30px;
+        transition: background-color 0.3s;
+    }
+    .switch::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: white;
+        transform: translateY(-50%);
+        transition: transform 0.3s;
+    }
+    .switch-on {
+        background-color: #00B2A9;
+    }
+    .switch-on::before {
+        transform: translate(30px, -50%);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Criar o interruptor de tema
+    dark_mode = st.sidebar.checkbox('Modo Escuro', key='theme_toggle')
+
+    if dark_mode:
+        st.markdown('<div class="switch-container"><label class="switch-label">🌙 Escuro</label><div class="switch switch-on"></div></div>', unsafe_allow_html=True)
         set_theme(True)
     else:
+        st.markdown('<div class="switch-container"><label class="switch-label">🌞 Claro</label><div class="switch"></div></div>', unsafe_allow_html=True)
         set_theme(False)
 
 # Adicionando o título e subtítulo com fontes personalizadas
@@ -81,6 +127,7 @@ theme_switch()
 st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
 st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrentes</h2>", unsafe_allow_html=True)
 
-# Descrição adicional
-st.write("Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!")
+# Descrição adicional com alinhamento adequado
+st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
+
 
