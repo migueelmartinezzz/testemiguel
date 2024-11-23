@@ -3,7 +3,10 @@ import pandas as pd
 import streamlit as st
 import pandas as pd
 
-# HTML e CSS para estilizar o título e subtítulo
+import streamlit as st
+import pandas as pd
+
+# HTML e CSS para estilizar apenas o título
 st.markdown(
     """
     <style>
@@ -18,7 +21,7 @@ st.markdown(
         font-size: 24px;
         font-weight: bold; /* Negrito */
         color: #333333; /* Cinza escuro */
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Poppins', sans-serif; /* Fonte Padrão */
         text-align: center; /* Centralizado */
         margin-top: -10px; /* Ajuste opcional para aproximar o subtítulo */
     }
@@ -32,13 +35,12 @@ st.markdown(
 # Descrição adicional
 st.markdown(
     """
-    <div style='text-align: center; font-family: Fjalla One, sans-serif; color: #555555;'>
+    <div style='text-align: center; font-family: Poppins, sans-serif; color: #555555;'>
     Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!
     </div>
     """,
     unsafe_allow_html=True
 )
-
 
 
 
