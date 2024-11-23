@@ -3,7 +3,7 @@ import pandas as pd
 st.markdown(
     """
     <style>
-    @import url('https://fonts.google.com/specimen/Bokor');
+    @import url('https://fonts.google.com/share?selection.family=Bokor|Fjalla+One|Noto+Serif:ital,wght@0,100..900;1,100..900r');
     .titulo {
         font-size: 36px;
         color: #003366; /* Azul escuro */
