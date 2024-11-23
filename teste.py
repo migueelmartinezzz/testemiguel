@@ -3,7 +3,7 @@ import pandas as pd
 st.markdown(
     """
     <style>
-    @import url('https://fonts.google.com/specimen/Fjalla+One?preview.text=Prospectec');
+    @import url('https://fonts.google.com/specimen/Bokor');
     .titulo {
         font-size: 36px;
         color: #003366; /* Azul escuro */
