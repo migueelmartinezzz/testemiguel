@@ -104,7 +104,7 @@ st.markdown("""
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px; /* Ajuste o tamanho da logo */
+    width: 100px; /* Ajuste o tamanho da logo */
     margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
