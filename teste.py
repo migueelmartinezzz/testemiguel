@@ -43,33 +43,39 @@ def set_theme(dark_mode):
         """
         st.markdown(light_mode_css, unsafe_allow_html=True)
 
-# Adicionando a barra lateral para selecionar o tema
-tema = st.sidebar.radio("Escolha o tema", ["Claro", "Escuro"])
+# Função para o botão de interruptor para o tema
+def theme_switch():
+    theme = st.sidebar.checkbox("Mudar para modo escuro", value=False)
+    if theme:
+        set_theme(True)
+    else:
+        set_theme(False)
 
-# Definindo o tema inicial
-if tema == "Escuro":
-    set_theme(True)
-else:
-    set_theme(False)
-
-# Estilos do título e subtítulo
+# Adicionando o título e subtítulo com fontes personalizadas
 st.markdown("""
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 .titulo {
     font-size: 36px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;  /* Centralizado */
+    color: #00B2A9; /* Cor turquesa */
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
 }
 
 .subtitulo {
     font-size: 24px;
     font-weight: bold;
+    color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
-    text-align: center;  /* Centralizado */
+    text-align: center;
     margin-top: -10px;
 }
 </style>
 """, unsafe_allow_html=True)
+
+# Tema inicial e switch de tema
+theme_switch()
 
 # Exibição do título e subtítulo
 st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
