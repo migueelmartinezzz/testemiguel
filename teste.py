@@ -137,7 +137,7 @@ hr {
 theme_switch()
 
 # Adicionando a logo acima do título
-st.markdown('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" class="logo">', unsafe_allow_html=True)  # Exemplo de logo
+st.markdown('WhatsApp Image 2024-11-23 at 19.56.26.jpeg" class="logo">', unsafe_allow_html=True)  # Exemplo de logo
 
 # Linha divisória entre a logo e o título
 st.markdown("<hr>", unsafe_allow_html=True)
