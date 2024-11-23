@@ -141,3 +141,31 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrent
 # Descrição adicional com alinhamento adequado
 st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
 
+# Botando uma separação legal entre logo e título
+<style>
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* Ajuste o tamanho da logo */
+    margin-bottom: 20px; /* Espaço entre a logo e o título */
+}
+
+.titulo {
+    font-size: 36px;
+    color: #00B2A9; /* Cor turquesa */
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Cor para o subtítulo */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: -10px; /* Ajuste conforme necessário */
+}
+</style>
+
