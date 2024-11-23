@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import streamlit as st
 
 # Função para definir tema claro ou escuro
 def set_theme(dark_mode):
@@ -97,16 +97,24 @@ def theme_switch():
         st.sidebar.markdown('<div class="switch-container"><label class="switch-label">🌞 Claro</label><div class="switch"></div></div>', unsafe_allow_html=True)
         set_theme(False)
 
-# Adicionando o título e subtítulo com fontes personalizadas
+# Adicionando o título, subtítulo e logo com estilos
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* Ajuste o tamanho da logo */
+}
 
 .titulo {
     font-size: 36px;
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
+    margin-top: 10px;
 }
 
 .subtitulo {
@@ -123,9 +131,13 @@ st.markdown("""
 # Tema inicial e switch de tema
 theme_switch()
 
+# Adicionando a logo acima do título
+st.markdown('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" class="logo">', unsafe_allow_html=True)  # Exemplo de logo
+
 # Exibição do título e subtítulo
 st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
 st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrentes</h2>", unsafe_allow_html=True)
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
+
