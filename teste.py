@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit as st
-import streamlit as st
 
 # Adicionando o CSS para o interruptor e os estilos do título/subtítulo
 toggle_css = """
@@ -23,12 +21,12 @@ toggle_css = """
     margin-top: -10px;
 }
 
-/* Estilo do interruptor */
+/* Estilo do interruptor no canto superior direito */
 .switch-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
 }
 
 .switch {
@@ -81,20 +79,20 @@ input:checked + .slider:before {
 # Adicionando CSS ao Streamlit
 st.markdown(toggle_css, unsafe_allow_html=True)
 
-# Estado inicial do tema
-if "dark_mode" not in st.session_state:
-    st.session_state.dark_mode = False
-
 # Função para alternar o tema
 def toggle_theme():
     st.session_state.dark_mode = not st.session_state.dark_mode
 
-# Exibir o interruptor na interface
+# Escolher o tema a partir do checkbox
+if "dark_mode" not in st.session_state:
+    st.session_state.dark_mode = False
+
+# Exibir o interruptor de tema no canto superior direito
 st.markdown(
     """
     <div class="switch-container">
         <label class="switch">
-            <input type="checkbox" id="theme-toggle" onchange="window.location.reload()" {checked}>
+            <input type="checkbox" onchange="window.location.reload()" {checked}>
             <span class="slider"></span>
         </label>
     </div>
@@ -102,7 +100,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Tema claro e escuro
+# Alterar tema baseado no estado do checkbox
 if st.session_state.dark_mode:
     dark_mode_css = """
     <style>
@@ -148,6 +146,7 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros e conheça seus concorrent
 
 # Descrição adicional
 st.write("Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!")
+
 
    
     
