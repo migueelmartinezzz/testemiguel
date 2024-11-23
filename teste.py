@@ -147,8 +147,8 @@ st.markdown("<p style='text-align: center;'>Utilize nossa ferramenta para identi
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px; /* Ajuste o tamanho da logo */
-    margin-bottom: 20px; /* Espaço entre a logo e o título */
+    width: 120px; /* Ajuste o tamanho da logo */
+    margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
 .titulo {
