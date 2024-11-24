@@ -117,26 +117,26 @@ st.markdown("""
 }
 
 .titulo {
-    font-size: 32px; /* Diminui o tamanho do título */
+    font-size: 28px; /* Diminui o tamanho do título */
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
-    margin-top: 5px; /* Diminui o espaço acima do título */
+    margin-top: 10px; /* Diminui o espaço acima do título */
     margin-bottom: 5px; /* Diminui o espaço abaixo do título */
 }
 
 .subtitulo {
-    font-size: 20px; /* Diminui o tamanho do subtítulo */
+    font-size: 18px; /* Diminui o tamanho do subtítulo */
     font-weight: bold;
     color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px; /* Diminui o espaço abaixo do subtítulo */
+    margin-bottom: 10px; /* Diminui o espaço abaixo do subtítulo */
 }
 
 hr {
     border: 0;
     height: 1px;
     background-color: #e0e0e0;
-    margin-bottom: 15px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
+    margin-bottom: 10px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
 }
 </style>
 """, unsafe_allow_html=True)
