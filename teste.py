@@ -6,11 +6,11 @@ def set_theme(dark_mode):
         dark_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #ffffff; /* Fundo branco */
+            background-color: #D9D9D9; /* Fundo cinza claro */
             color: #000000; /* Texto preto */
         }
         [data-testid="stSidebar"] {
-            background-color: #e0f7fa; /* Azul claro para a barra lateral */
+            background-color: #006666; /* Azul escuro para a barra lateral */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
             color: #000000; /* Texto preto */
@@ -22,11 +22,11 @@ def set_theme(dark_mode):
         light_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #ffffff; /* Fundo branco */
+            background-color: #D9D9D9; /* Fundo cinza claro */
             color: #000000; /* Texto preto */
         }
         [data-testid="stSidebar"] {
-            background-color: #e0f7fa; /* Azul claro para a barra lateral */
+            background-color: #006666; /* Azul escuro para a barra lateral */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
             color: #000000; /* Texto preto */
@@ -104,7 +104,7 @@ st.markdown("""
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70px; /* Ajuste o tamanho da logo */
+    width: 100px; /* Ajuste o tamanho da logo */
     margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
@@ -136,8 +136,8 @@ hr {
 # Tema inicial e switch de tema
 theme_switch()
 
-# Adicionando a logo acima do título
-st.markdown('![Logo](https://github.com/migueelmartinezzz/testemiguel.py/blob/main/WhatsApp%20Image%202024-11-23%20at%2021.02.03.jpeg)', unsafe_allow_html=True)
+# Exibindo a logo com a tag HTML <img>
+st.markdown('<img src="https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2019.56.26.jpeg" class="logo">', unsafe_allow_html=True)
 
 # Linha divisória entre a logo e o título
 st.markdown("<hr>", unsafe_allow_html=True)
