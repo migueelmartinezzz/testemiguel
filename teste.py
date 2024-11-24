@@ -49,7 +49,7 @@ def set_theme(dark_mode):
             border: 0;
             height: 4px; /* Aumentando a espessura da linha */
             background-color: #00B2A9; /* Linha azul turquesa */
-            margin-bottom: 5px; /* Distância ajustada entre linha e conteúdo */
+            margin-bottom: 10px; /* Ajustando a distância entre a linha e o conteúdo */
         }
         </style>
         """
@@ -120,7 +120,6 @@ st.markdown("""
     margin-left: auto;
     margin-right: auto;
     width: 100px; /* Ajuste o tamanho da logo */
-    margin-bottom: 10px; /* Diminui o espaço entre a logo e o título */
 }
 
 .titulo {
@@ -162,4 +161,3 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros & conheça seus concorrent
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
-
