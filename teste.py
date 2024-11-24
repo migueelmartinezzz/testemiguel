@@ -156,4 +156,3 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros & conheça seus concorrent
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
-
