@@ -134,9 +134,9 @@ st.markdown("""
 
 hr {
     border: 0;
-    height: 2px;
-    background-color: #e0e0e0;
-    margin-bottom: 5px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
+    height: 4px;
+    background-color: #00B2A9;
+    margin-bottom: 10px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
 }
 </style>
 """, unsafe_allow_html=True)
