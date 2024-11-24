@@ -6,14 +6,15 @@ def set_theme(dark_mode):
         dark_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #D9D9D9; /* Fundo cinza claro */
-            color: #000000; /* Texto preto */
+            background-color: #000000; /* Fundo preto para o modo escuro */
+            color: #FFFFFF; /* Texto branco */
         }
         [data-testid="stSidebar"] {
-            background-color: #006666; /* Azul escuro para a barra lateral */
+            background-color: #FFFFFF; /* Barra lateral branca */
+            border-right: 4px solid #00B2A9; /* Borda azul turquesa */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
-            color: #000000; /* Texto preto */
+            color: #FFFFFF; /* Texto branco no modo escuro */
         }
         </style>
         """
@@ -22,14 +23,15 @@ def set_theme(dark_mode):
         light_mode_css = """
         <style>
         [data-testid="stAppViewContainer"] {
-            background-color: #D9D9D9; /* Fundo cinza claro */
+            background-color: #D9D9D9; /* Fundo cinza claro para o modo claro */
             color: #000000; /* Texto preto */
         }
         [data-testid="stSidebar"] {
-            background-color: #006666; /* Azul escuro para a barra lateral */
+            background-color: #FFFFFF; /* Barra lateral branca */
+            border-right: 4px solid #00B2A9; /* Borda azul turquesa */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
-            color: #000000; /* Texto preto */
+            color: #000000; /* Texto preto no modo claro */
         }
         .titulo {
             color: #00B2A9; /* Cor turquesa para o título */
@@ -137,7 +139,7 @@ hr {
 theme_switch()
 
 # Exibindo a logo com a tag HTML <img>
-st.markdown('<img src="https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2019.56.26.jpeg" class="logo">', unsafe_allow_html=True)
+st.markdown('<img src="https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2021.02.03.jpeg" class="logo">', unsafe_allow_html=True)
 
 # Linha divisória entre a logo e o título
 st.markdown("<hr>", unsafe_allow_html=True)
