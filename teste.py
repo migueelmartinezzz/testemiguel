@@ -104,7 +104,7 @@ st.markdown("""
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px; /* Ajuste o tamanho da logo */
+    width: 70px; /* Ajuste o tamanho da logo */
     margin-bottom: 15px; /* Espaço entre a logo e o título */
 }
 
@@ -137,7 +137,7 @@ hr {
 theme_switch()
 
 # Adicionando a logo acima do título
-st.markdown('![Logo](https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2019.56.26.jpeg)', unsafe_allow_html=True)
+st.markdown('![Logo](https://github.com/migueelmartinezzz/testemiguel.py/blob/main/WhatsApp%20Image%202024-11-23%20at%2021.02.03.jpeg)', unsafe_allow_html=True)
 
 # Linha divisória entre a logo e o título
 st.markdown("<hr>", unsafe_allow_html=True)
