@@ -137,7 +137,7 @@ hr {
 theme_switch()
 
 # Adicionando a logo acima do título
-st.markdown('![Logo](https://github.com/migueelmartinezzz/testemiguel.py/blob/main/WhatsApp%20Image%202024-11-23%20at%2019.56.26.jpeg'), unsafe_allow_html=True)  # Exemplo de logo
+st.markdown('![Logo](https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2019.56.26.jpeg)', unsafe_allow_html=True)
 
 # Linha divisória entre a logo e o título
 st.markdown("<hr>", unsafe_allow_html=True)
