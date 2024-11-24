@@ -40,7 +40,7 @@ def set_theme(dark_mode):
             color: #000000; /* Texto preto no modo claro */
         }
         .titulo {
-            color: #00B2A9; /* Cor turquesa para o título */
+            color: #003D66; /* Cor Azul Escuro para o título */
         }
         .subtitulo {
             color: #333333; /* Cinza escuro para o subtítulo */
@@ -51,7 +51,7 @@ def set_theme(dark_mode):
 
 # Função para criar o interruptor de tema
 def theme_switch():
-    st.sidebar.markdown("""
+    st.sidebar.markdown(""" 
     <style>
     .switch-container {
         display: flex;
@@ -109,11 +109,9 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
     width: 100px; /* Ajuste o tamanho da logo */
-    margin-bottom: 10px; /* Diminui o espaço entre a logo e o título */
+    margin-right: 20px; /* Espaçamento entre a logo e o título */
 }
 
 .titulo {
@@ -122,6 +120,7 @@ st.markdown("""
     font-family: 'Fjalla One', sans-serif;
     margin-top: 10px; /* Diminui o espaço acima do título */
     margin-bottom: 0px; /* Reduz a distância entre título e subtítulo */
+    display: inline-block;
 }
 
 .subtitulo {
@@ -145,16 +144,17 @@ hr {
 # Tema inicial e switch de tema
 theme_switch()
 
-# Exibindo a logo com a tag HTML <img>
-st.markdown('<img src="https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2021.02.03.jpeg" class="logo">', unsafe_allow_html=True)
+# Exibindo o título e a logo lado a lado
+st.markdown('<div style="display: flex; align-items: center;">'
+            '<img src="https://github.com/migueelmartinezzz/testemiguel.py/raw/main/WhatsApp%20Image%202024-11-23%20at%2021.02.03.jpeg" class="logo">'
+            '<h1 class="titulo">Prospectec</h1>'
+            '</div>', unsafe_allow_html=True)
 
-# Linha divisória entre a logo e o título
+# Linha divisória entre o título/logo e o subtítulo
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# Exibição do título e subtítulo
-st.markdown("<h1 class='titulo'>Prospectec</h1>", unsafe_allow_html=True)
+# Exibição do subtítulo
 st.markdown("<h2 class='subtitulo'>Encontre parceiros & conheça seus concorrentes</h2>", unsafe_allow_html=True)
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
-
