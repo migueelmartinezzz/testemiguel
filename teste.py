@@ -117,7 +117,7 @@ st.markdown("""
 }
 
 .titulo {
-    font-size: 28px; /* Diminui o tamanho do título */
+    font-size: 50px; /* Diminui o tamanho do título */
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
     margin-top: 10px; /* Diminui o espaço acima do título */
