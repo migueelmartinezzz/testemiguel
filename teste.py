@@ -13,6 +13,9 @@ def set_theme(dark_mode):
             background-color: #FFFFFF; /* Barra lateral branca */
             border-right: 4px solid #00B2A9; /* Borda azul turquesa */
         }
+        [data-testid="stSidebar"] .sidebar-content {
+            color: #D9D9D9; /* Cor do texto na barra lateral em modo escuro */
+        }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
             color: #FFFFFF; /* Texto branco no modo escuro */
         }
@@ -29,6 +32,9 @@ def set_theme(dark_mode):
         [data-testid="stSidebar"] {
             background-color: #FFFFFF; /* Barra lateral branca */
             border-right: 4px solid #00B2A9; /* Borda azul turquesa */
+        }
+        [data-testid="stSidebar"] .sidebar-content {
+            color: #000000; /* Texto preto na barra lateral no modo claro */
         }
         h1, h2, h3, h4, h5, h6, p, .titulo, .subtitulo {
             color: #000000; /* Texto preto no modo claro */
@@ -107,30 +113,30 @@ st.markdown("""
     margin-left: auto;
     margin-right: auto;
     width: 100px; /* Ajuste o tamanho da logo */
-    margin-bottom: 15px; /* Espaço entre a logo e o título */
+    margin-bottom: 10px; /* Diminui o espaço entre a logo e o título */
 }
 
 .titulo {
-    font-size: 36px;
+    font-size: 32px; /* Diminui o tamanho do título */
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px; /* Espaço abaixo do título */
+    margin-top: 5px; /* Diminui o espaço acima do título */
+    margin-bottom: 5px; /* Diminui o espaço abaixo do título */
 }
 
 .subtitulo {
-    font-size: 24px;
+    font-size: 20px; /* Diminui o tamanho do subtítulo */
     font-weight: bold;
     color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 30px; /* Espaço entre o subtítulo e o conteúdo abaixo */
+    margin-bottom: 15px; /* Diminui o espaço abaixo do subtítulo */
 }
 
 hr {
     border: 0;
     height: 1px;
     background-color: #e0e0e0;
-    margin-bottom: 30px;
+    margin-bottom: 15px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
 }
 </style>
 """, unsafe_allow_html=True)
