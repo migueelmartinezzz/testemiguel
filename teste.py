@@ -118,14 +118,14 @@ st.markdown("""
 
 .titulo {
     font-size: 50px; /* Diminui o tamanho do título */
-    color: #00B2A9; /* Cor turquesa */
+    color: #003D66; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
     margin-top: 10px; /* Diminui o espaço acima do título */
     margin-bottom: 0px; /* Reduz a distância entre título e subtítulo */
 }
 
 .subtitulo {
-    font-size: 18px; /* Diminui o tamanho do subtítulo */
+    font-size: 30px; /* Diminui o tamanho do subtítulo */
     font-weight: bold;
     color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
@@ -135,9 +135,9 @@ st.markdown("""
 
 hr {
     border: 0;
-    height: 1px;
+    height: 2px;
     background-color: #e0e0e0;
-    margin-bottom: 10px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
+    margin-bottom: 5px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
 }
 </style>
 """, unsafe_allow_html=True)
