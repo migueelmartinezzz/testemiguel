@@ -134,7 +134,7 @@ st.markdown("""
 
 hr {
     border: 0;
-    height: 4px;
+    height: 5px;
     background-color: #00B2A9;
     margin-bottom: 10px; /* Diminui o espaço entre a linha divisória e o conteúdo abaixo */
 }
