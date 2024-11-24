@@ -10,7 +10,7 @@ def set_theme(dark_mode):
             color: #FFFFFF; /* Texto branco */
         }
         [data-testid="stSidebar"] {
-            background-color: #FFFFFF; /* Barra lateral branca */
+            background-color: #333333; /* Barra lateral escura */
             border-right: 4px solid #00B2A9; /* Borda azul turquesa */
         }
         [data-testid="stSidebar"] .sidebar-content {
@@ -121,7 +121,7 @@ st.markdown("""
     color: #00B2A9; /* Cor turquesa */
     font-family: 'Fjalla One', sans-serif;
     margin-top: 10px; /* Diminui o espaço acima do título */
-    margin-bottom: 5px; /* Diminui o espaço abaixo do título */
+    margin-bottom: 0px; /* Reduz a distância entre título e subtítulo */
 }
 
 .subtitulo {
@@ -129,7 +129,8 @@ st.markdown("""
     font-weight: bold;
     color: #333333; /* Cor para o subtítulo */
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 10px; /* Diminui o espaço abaixo do subtítulo */
+    margin-top: 0px; /* Reduz a distância entre subtítulo e conteúdo */
+    margin-bottom: 10px; /* Reduz a distância entre o subtítulo e o conteúdo */
 }
 
 hr {
@@ -156,3 +157,4 @@ st.markdown("<h2 class='subtitulo'>Encontre parceiros & conheça seus concorrent
 
 # Descrição adicional com alinhamento adequado
 st.markdown("<p>Utilize nossa ferramenta para identificar empresas semelhantes em poucos cliques!</p>", unsafe_allow_html=True)
+
